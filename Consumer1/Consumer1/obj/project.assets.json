@@ -7494,10 +7494,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladislav.sirotko\\documents\\visual studio 2017\\Consumer1\\Consumer1\\Consumer1.csproj",
+      "projectUniqueName": "C:\\Users\\vladislav.sirotko\\Documents\\visual studio 2017\\multiConsumers\\Consumer1\\Consumer1\\Consumer1.csproj",
       "projectName": "Consumer1",
-      "projectPath": "C:\\Users\\vladislav.sirotko\\documents\\visual studio 2017\\Consumer1\\Consumer1\\Consumer1.csproj",
-      "outputPath": "C:\\Users\\vladislav.sirotko\\documents\\visual studio 2017\\Consumer1\\Consumer1\\obj\\",
+      "projectPath": "C:\\Users\\vladislav.sirotko\\Documents\\visual studio 2017\\multiConsumers\\Consumer1\\Consumer1\\Consumer1.csproj",
+      "outputPath": "C:\\Users\\vladislav.sirotko\\Documents\\visual studio 2017\\multiConsumers\\Consumer1\\Consumer1\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

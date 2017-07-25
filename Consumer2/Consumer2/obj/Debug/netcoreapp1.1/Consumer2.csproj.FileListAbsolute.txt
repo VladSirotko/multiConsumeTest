@@ -7,3 +7,12 @@ c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\
 c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.dll
 c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.pdb
 C:\Users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.csprojResolveAssemblyReference.cache
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.deps.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.runtimeconfig.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.runtimeconfig.dev.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.dll
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.pdb
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.csprojResolveAssemblyReference.cache
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.AssemblyInfo.cs
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.dll
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.pdb

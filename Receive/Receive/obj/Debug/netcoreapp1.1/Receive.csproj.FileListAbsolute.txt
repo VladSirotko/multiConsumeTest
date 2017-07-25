@@ -15,3 +15,12 @@ C:\Users\vladislav.sirotko\Documents\Visual Studio 2017\Projects\Receive\Receive
 C:\Users\vladislav.sirotko\Documents\Visual Studio 2017\Projects\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.AssemblyInfo.cs
 C:\Users\vladislav.sirotko\Documents\Visual Studio 2017\Projects\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.dll
 C:\Users\vladislav.sirotko\Documents\Visual Studio 2017\Projects\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.pdb
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\bin\Debug\netcoreapp1.1\Receive.deps.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\bin\Debug\netcoreapp1.1\Receive.runtimeconfig.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\bin\Debug\netcoreapp1.1\Receive.runtimeconfig.dev.json
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\bin\Debug\netcoreapp1.1\Receive.dll
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\bin\Debug\netcoreapp1.1\Receive.pdb
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.csprojResolveAssemblyReference.cache
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.AssemblyInfo.cs
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.dll
+C:\Users\vladislav.sirotko\Documents\visual studio 2017\multiConsumers\Receive\Receive\obj\Debug\netcoreapp1.1\Receive.pdb

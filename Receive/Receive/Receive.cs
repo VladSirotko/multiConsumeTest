@@ -1,45 +1,86 @@
-﻿using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System;
-using System.Text;
-using System.Threading;
-
-class Receive
+﻿namespace Receive
 {
-    public static void Main()
+    using Newtonsoft.Json;
+    using RabbitMQ.Client;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System;
+    internal class Program
     {
-        var factory = new ConnectionFactory()
+        private static void Main(string[] args)
         {
-            HostName = "localhost",
-            UserName ="guest",
-            Password = "guest",
-            VirtualHost = "/",
-            
-        };
-        var connection = factory.CreateConnection();
-        using (connection)
-        using (var channel = connection.CreateModel())
-        {
-            channel.QueueDeclare(queue: "hello",
-                durable: false,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null);
 
-            var consumer = new EventingBasicConsumer(channel);
-            consumer.Received += (model, ea) =>
+            var settings = new CommunicationSettingsProvider()
             {
-                var body = ea.Body;
-                var message = Encoding.UTF8.GetString(body);
-                Thread.Sleep(3000);
-                Console.WriteLine(" [x] Received {0}", message);
+                SendEmailQueueName = "TestQueue",
+                QueueHostName = "mq.corp.solbeg.com",
+                QueuePassword = "BkA3ue5ncD",
+                QueuePort = 5672,
+                QueueUserName = "mqsolbeg",
+                BindingKey = "BindingKey",
+                Exchange = "Exchange"
             };
-            channel.BasicConsume("hello",
-                true,
-                consumer: consumer);
+            var model = new Model
+            {
+                StringForFirstConsumer = "StringForFirstConsumer",
+                StringForSecondConsumer = "StringForSecondConsumer"
+            };
+            SendAsync(model, settings);
+        }
 
-            Console.WriteLine(" Press [enter] to exit.");
-            Console.ReadLine();
+        public class CommunicationSettingsProvider
+        {
+            public string SendEmailQueueName { get; set; }
+            public string QueueHostName { get; set; }
+            public string QueueUserName { get; set; }
+            public string QueuePassword { get; set; }
+            public int QueuePort { get; set; }
+            public string BindingKey { get; set; }
+            public string Exchange { get; set; }
+            public string SmtpServer { get; set; }
+            public int SmtpPort { get; set; }
+            public string SmtpUserName { get; set; }
+            public string SmtpPassword { get; set; }
+            public string SmtpFromName { get; set; }
+            public string SmtpFromEmail { get; set; }
+        }
+
+        public static Task SendAsync(Model model, CommunicationSettingsProvider communicationSettingsProvider)
+        {
+            var factory = new ConnectionFactory
+            {
+                HostName = communicationSettingsProvider.QueueHostName,
+                UserName = communicationSettingsProvider.QueueUserName,
+                Password = communicationSettingsProvider.QueuePassword,
+                Port = communicationSettingsProvider.QueuePort
+            };
+
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                channel.ExchangeDeclare(communicationSettingsProvider.Exchange, ExchangeType.Direct, true, false, null);
+                channel.QueueDeclare("Consumer1", true, false, false, null);
+                channel.QueueBind("Consumer1", communicationSettingsProvider.Exchange, communicationSettingsProvider.BindingKey);
+
+                channel.QueueDeclare("Consumer2", true, false, false, null);
+                channel.QueueBind("Consumer2", communicationSettingsProvider.Exchange, communicationSettingsProvider.BindingKey);
+
+                var message = JsonConvert.SerializeObject(model);
+                var body = Encoding.UTF8.GetBytes(message);
+
+                channel.BasicPublish(exchange: communicationSettingsProvider.Exchange,
+                    routingKey: communicationSettingsProvider.BindingKey,
+                    basicProperties: null,
+                    body: body);
+            }
+
+            return Task.FromResult(0);
+        }
+
+        public class Model
+        {
+            public string StringForFirstConsumer { get; set; }
+            public string StringForSecondConsumer { get; set; }
         }
     }
 }

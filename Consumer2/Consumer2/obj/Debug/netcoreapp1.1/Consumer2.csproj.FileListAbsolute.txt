@@ -1,0 +1,9 @@
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.deps.json
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.runtimeconfig.json
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.runtimeconfig.dev.json
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.dll
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.AssemblyInfo.cs
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\bin\Debug\netcoreapp1.1\Consumer2.pdb
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.dll
+c:\users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.pdb
+C:\Users\vladislav.sirotko\documents\visual studio 2017\Consumer2\Consumer2\obj\Debug\netcoreapp1.1\Consumer2.csprojResolveAssemblyReference.cache
